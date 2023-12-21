@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>ApiController</servlet-name>
+        <jsp-file>/ApiController.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ApiController</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+
+<!--    conf-->
+
+
+    <servlet>
+        <servlet-name>CreatePaymentCompleteRequest</servlet-name>
+        <servlet-class>lk.mobios.chargehub.controller.sampath.CreatePaymentCompleteRequest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreatePaymentCompleteRequest</servlet-name>
+        <url-pattern>/CreatePaymentCompleteRequest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProcessTokenPayment</servlet-name>
+        <servlet-class>lk.mobios.chargehub.controller.sampath.ProcessTokenPayment</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProcessTokenPayment</servlet-name>
+        <url-pattern>/ProcessTokenPayment</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
